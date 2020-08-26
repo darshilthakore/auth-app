@@ -1,0 +1,20 @@
+<h3> Sign Up with a new account!</h3>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="text" class="form-control" #username required>
+</div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" aria-describedby="emailHelp" #email required>
+</div>
+<div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" #password required>
+</div>
+<div *ngIf="errorMsg">
+    <div class="alert alert-warning" role="alert">
+        {{errorMsg}}
+      </div>
+</div>
+<button type="submit" class="btn btn-primary" (click)="signUp(email.value, password.value, username.value)">Sign Up</button>

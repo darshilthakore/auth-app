@@ -1,0 +1,14 @@
+[
+    {
+        "user_name": "abc",
+        "user_email": "abc@gmail.com"
+    },
+    {
+        "user_name": "efe",
+        "user_email": "efe@gmail.com"
+    },
+    {
+        "user_name": "asda",
+        "user_email": "asda@gmail.com"
+    }
+]
