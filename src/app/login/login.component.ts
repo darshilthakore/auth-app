@@ -23,11 +23,9 @@ export class LoginComponent implements OnInit {
   logIn(email, password) {
     this.authService.loginUser(email, password)
       .then((response) => {
-        console.log('Login Resp', response);
         localStorage.setItem('user', JSON.stringify(response.user));
         this.router.navigate(['/home']);
       }).catch((error) => {
-        console.log('Login error', error);
         this.errorMsg = error;
       })
   }
